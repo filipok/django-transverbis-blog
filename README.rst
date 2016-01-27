@@ -69,13 +69,19 @@ and also::
     url(r'^accounts/login/$', login, name='login'),
     url(r'^accounts/logout/$', logout, {'next_page': '/'}, name='logout'),
 
-Note: the login part is currently not used, but you can add a login button on your page. Also, currently you get a 404 error if you use this custom login page instead of Django's.
+Note: the login part is currently not used, but you can add a login button on your page.
 
 Also ensure you have the following imports in your ``urls.py``::
 
     from django.conf.urls import include, url
     from django.contrib import admin
     from django.contrib.auth.views import login, logout
+
+Then add::
+
+    LOGIN_REDIRECT_URL = '/'
+
+to your ``settings.py`` file.
 
 
 6. Populate the database::
