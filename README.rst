@@ -24,11 +24,11 @@ Quick start for a local installation on Ubuntu 14.04 LTS
 
     pip install django-transverbis-blog
 
-or, more likely, if creating a tar.gz package with `python setupy.py sdist`::
+or, more likely, if creating a tar.gz package with ``python setupy.py sdist``::
 
     pip install django-transverbis-blog-x.x.tar.gz
 
-3. Add `djtransverbisblog` to your INSTALLED_APPS settings::
+3. Add ``djtransverbisblog`` to your INSTALLED_APPS settings::
 
     INSTALLED_APPS = [
         ...
@@ -36,7 +36,7 @@ or, more likely, if creating a tar.gz package with `python setupy.py sdist`::
     ]
 
 
-4. Add `djtransverbisblog.context_proc.base_variables` to your context_processors setting like this::
+4. Add ``djtransverbisblog.context_proc.base_variables`` to your context_processors setting like this::
 
     TEMPLATES = [
         {
@@ -56,7 +56,7 @@ or, more likely, if creating a tar.gz package with `python setupy.py sdist`::
     ]
 
 
-5. Include the djtransverbisblog URLconf in your project `urls.py` like this in order to have your blog at the address example.com/blog/::
+5. Include the djtransverbisblog URLconf in your project ``urls.py`` like this in order to have your blog at the address example.com/blog/::
 
     url(r'^blog/', include('djtransverbisblog.urls')),
 
@@ -71,7 +71,7 @@ and also::
 
 Note: the login part is currently not used, but you can add always a login button on your page. Also, currently you get a 404 error if you use this custom login page instead of Django's.
 
-Also ensure you have the following imports in your `urls.py`::
+Also ensure you have the following imports in your ``urls.py``::
 
     from django.conf.urls import include, url
     from django.contrib import admin
@@ -84,4 +84,4 @@ Also ensure you have the following imports in your `urls.py`::
     python manage.py migrate
 
 
-7. Start the development server and visit http://127.0.0.1:8000/admin/ to login with your superuser account and start populating the blog. You can use the default Django admin interface or you can use the custom admin interface available from the homepage at http://127.0.0.1:8000/ (without `admin/`).
+7. Start the development server and visit http://127.0.0.1:8000/admin/ to login with your superuser account and start populating the blog. You can use the default Django admin interface or you can use the custom admin interface available from the homepage at http://127.0.0.1:8000/ (without ``admin/``).
