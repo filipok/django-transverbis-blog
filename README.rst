@@ -22,9 +22,9 @@ Quick start for a local installation on Ubuntu 14.04 LTS
 
 2. Install django-transverbis-blog::
 
-    pip install django-transverbis-blog
+    pip install git+git://github.com/filipok/django-transverbis-blog.git
 
-or, more likely, if creating a tar.gz package with ``python setupy.py sdist``::
+or, if you create a tar.gz package with ``python setupy.py sdist``::
 
     pip install django-transverbis-blog-x.x.tar.gz
 
@@ -84,4 +84,8 @@ Also ensure you have the following imports in your ``urls.py``::
     python manage.py migrate
 
 
-7. Start the development server and visit http://127.0.0.1:8000/admin/ to login with your superuser account and start populating the blog. You can use the default Django admin interface or you can use the custom admin interface available from the homepage at http://127.0.0.1:8000/ (without ``admin/``).
+7. Start the development server::
+
+    python manage.py runserver
+
+ and visit http://127.0.0.1:8000/admin/ to login with your superuser account and start populating the blog. You can use the default Django admin interface or you can use the custom admin interface available from the homepage at http://127.0.0.1:8000/ (without ``admin/``).
