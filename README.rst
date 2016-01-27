@@ -56,11 +56,11 @@ or, more likely, if creating a tar.gz package with ``python setupy.py sdist``::
     ]
 
 
-5. Include the djtransverbisblog URLconf in your project ``urls.py`` like this in order to have your blog at the address example.com/blog/::
+5. Include the djtransverbisblog URLconf in your project ``urls.py`` like this in order to have your blog at the address http://example.com/blog/ ::
 
     url(r'^blog/', include('djtransverbisblog.urls')),
 
-or like this for the root page of example.com/::
+or like this for the root page of http://example.com/ ::
 
     url(r'', include('djtransverbisblog.urls')),
 
@@ -69,7 +69,7 @@ and also::
     url(r'^accounts/login/$', login, name='login'),
     url(r'^accounts/logout/$', logout, {'next_page': '/'}, name='logout'),
 
-Note: the login part is currently not used, but you can add always a login button on your page. Also, currently you get a 404 error if you use this custom login page instead of Django's.
+Note: the login part is currently not used, but you can add a login button on your page. Also, currently you get a 404 error if you use this custom login page instead of Django's.
 
 Also ensure you have the following imports in your ``urls.py``::
 
