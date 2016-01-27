@@ -1,4 +1,5 @@
-# Django Transverbis blog
+Django Transverbis blog
+=======================
 
 
 This is a simple Django app used for the Transverbis.ro website.
