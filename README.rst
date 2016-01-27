@@ -9,16 +9,16 @@ The HTML templates use  Bootstrap.
 Quick start for a local installation on Ubuntu 14.04 LTS
 -----------
 1. Create a local Django installation:
-```
-mkdir myblog
-cd myblog
-virtualenv venv
-source venv/bin/activate
-pip install Django
-django-admin.py startproject myblog .
-python manage.py migrate
-python manage.py createsuperuser
-```
+
+    mkdir myblog
+    cd myblog
+    virtualenv venv
+    source venv/bin/activate
+    pip install Django
+    django-admin.py startproject myblog .
+    python manage.py migrate
+    python manage.py createsuperuser
+
 
 2. Install django-transverbis-blog:
 ```
