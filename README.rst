@@ -88,4 +88,4 @@ Also ensure you have the following imports in your ``urls.py``::
 
     python manage.py runserver
 
- and visit http://127.0.0.1:8000/admin/ to login with your superuser account and start populating the blog. You can use the default Django admin interface or you can use the custom admin interface available from the homepage at http://127.0.0.1:8000/ (without ``admin/``).
+and visit http://127.0.0.1:8000/admin/ to login with your superuser account and start populating the blog. You can use the default Django admin interface or you can use the custom admin interface available from the homepage at http://127.0.0.1:8000/ (without ``admin/``).
