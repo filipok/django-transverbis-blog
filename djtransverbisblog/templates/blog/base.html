@@ -20,7 +20,7 @@
     <div class="container">
         {% if user.is_authenticated  %}
             <a href="{% url 'logout' %}" class="top-menu"><span class="glyphicon glyphicon-log-out" style="vertical-align:middle"></span></a>
-            <a href="{% url 'blog:new_comments_list' %}" class="top-menu"><span class="label label-warning">{{ newcomms }}</span></a>
+            <a href="{% url 'blog:new_comments_list' %}" class="top-menu"><span class="label label-warning">{{ tvblog_newcomms }}</span></a>
             <a href="{% url 'blog:post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit" style="vertical-align:middle"></span></a>
             <a href="{% url 'blog:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus" style="vertical-align:middle"></span></a>
             <a href="{% url 'blog:page_new' %}" class="top-menu"><span class="glyphicon glyphicon-file" style="vertical-align:middle"></span></a>
@@ -49,7 +49,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        {% for nav_page in pages %}
+        {% for nav_page in tvblog_pages %}
           {% if page == nav_page %}
             <li class="active">
           {% else %}
@@ -78,8 +78,8 @@
             </div>
             <div class="col-md-2">
                 {% autoescape off %}
-                <h3>{{ sidebar.title}}</h3>
-                {{ sidebar.en_content}}
+                <h3>{{ tvblog_sidebar.title}}</h3>
+                {{ tvblog_sidebar.en_content}}
                 {% endautoescape %}
             </div>
         </div>
