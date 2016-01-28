@@ -63,4 +63,8 @@ venv
 *.pyc
 staticfiles
 
+# PyCharm
 .idea
+
+# Django migrations
+migrations
