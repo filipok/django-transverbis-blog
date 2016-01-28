@@ -83,14 +83,18 @@ Then add::
 
 to your ``settings.py`` file.
 
+6. Add your website name and slogan to ``settings.py``::
 
-6. Populate the database::
+    WEBSITE_NAME = 'MyWebsite'
+    WEBSITE_SLOGAN = 'MySlogan'
+
+7. Populate the database::
 
     python manage.py makemigrations djtransverbisblog
     python manage.py migrate
 
 
-7. Start the development server::
+8. Start the development server::
 
     python manage.py runserver
 

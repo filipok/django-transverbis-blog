@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Transverbis</title>
+    <title>{{website_name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +27,7 @@
             <a href="{% url 'admin:index' %}" class="top-menu"><span  style="vertical-align:middle">Hello, {{ user.username }}!</span></a>
         {% endif %}
         <div class="jumbotron">
-        <h1><a href="/"><span>Transverbis <small>| Translations</small></a></h1>
+        <h1><a href="/"><span>{{website_name}} <small>| {{website_slogan}}</small></a></h1>
         </div>
     </div>
 
@@ -85,7 +85,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-            <footer>© 2016 Transverbis SRL. All rights reserved.</footer>
+            <footer>© 2016 {{website_name}}. All rights reserved.</footer>
                 </div>
         </div>
     </div>
