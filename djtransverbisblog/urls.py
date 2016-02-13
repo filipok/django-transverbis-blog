@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.http import HttpResponse
 from . import views
 from .feeds import LatestEntriesFeed
 
@@ -20,5 +21,5 @@ urlpatterns = [
     url(r'^comments/$', views.new_comments_list, name='new_comments_list'),
     url(r'^clist/(?P<pk>[0-9]+)/approve/$', views.comment_approve_list, name='comment_approve_list'),
     url(r'^clist/(?P<pk>[0-9]+)/remove/$', views.comment_remove_list, name='comment_remove_list'),
-
+    url(r'^robots.txt$', lambda r: HttpResponse("User-agent: *\nDisallow: ", content_type="text/plain")),
 ]
