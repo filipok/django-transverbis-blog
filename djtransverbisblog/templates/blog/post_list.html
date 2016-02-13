@@ -14,5 +14,7 @@
         <a href="{% url 'blog:post_detail' pk=post.pk %}#comments">Comments: {{ post.approved_comments.count }}</a>
     </div>
 {% endfor %}
+<hr>
+<div>Subscribe: <a href="/feed/" class="fa fa-rss"></a></div>
 {% endautoescape %}
 {% endblock %}
